@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: ``, // Site domain. Do not include a trailing slash!
+    siteUrl: `https://netra.news`, // Site domain. Do not include a trailing slash!
 
     postsPerPage: 20, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
