@@ -39,17 +39,7 @@ module.exports = {
     },
     plugins: [
                 
-        /**
-         *  Rehype Plugins
-         */
-   {
-    resolve: `gatsby-transformer-rehype`,
-       },
-    
-       {
-          resolve: `gatsby-rehype-ghost-links`,
-        },
-          
+                 
         /**
          *  Content Plugins
          */
@@ -200,5 +190,16 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
+        
+        {
+    resolve: `gatsby-transformer-rehype`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-rehype-ghost-links`,
+        },
+      ],
+    },
+        
     ],
 }
