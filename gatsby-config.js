@@ -38,9 +38,24 @@ module.exports = {
         siteUrl: process.env.SITEURL || config.siteUrl,
     },
     plugins: [
+                
+        /**
+         *  Rehype Plugins
+         */
+   {
+    resolve: `gatsby-transformer-rehype`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-rehype-ghost-links`,
+        },
+      ],
+    },
+          
         /**
          *  Content Plugins
          */
+
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -189,17 +204,3 @@ module.exports = {
         `gatsby-plugin-offline`,
     ],
 }
-
-// In your gatsby-config.js
-plugins: [
-  {
-    resolve: `gatsby-transformer-rehype`,
-    options: {
-      plugins: [
-        {
-          resolve: `gatsby-rehype-ghost-links`,
-        },
-      ],
-    },
-  },
-]
