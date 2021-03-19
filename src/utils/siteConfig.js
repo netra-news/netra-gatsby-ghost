@@ -3,8 +3,8 @@ module.exports = {
 
     postsPerPage: 20, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
-    siteTitleMeta: `Netra News`, // This allows an alternative site title for meta data for pages.
-    siteDescriptionMeta: `A starter template to build amazing static websites with Ghost and Gatsby`, // This allows an alternative site description for meta data for pages.
+    siteTitleMeta: `Netra News — নেত্র নিউজ`, // This allows an alternative site title for meta data for pages.
+    siteDescriptionMeta: `Investigations, analysis, debate — অনুসন্ধান, বিশ্লেষণ, বিতর্ক`, // This allows an alternative site description for meta data for pages.
 
     shareImageWidth: 1000, // Change to the width of your default share image
     shareImageHeight: 523, // Change to the height of your default share image
