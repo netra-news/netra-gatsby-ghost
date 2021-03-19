@@ -44,13 +44,11 @@ module.exports = {
          */
    {
     resolve: `gatsby-transformer-rehype`,
-    options: {
-      plugins: [
-        {
+       },
+    
+       {
           resolve: `gatsby-rehype-ghost-links`,
         },
-      ],
-    },
           
         /**
          *  Content Plugins
