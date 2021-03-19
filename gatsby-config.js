@@ -190,15 +190,8 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
-        
-        {
-    resolve: `gatsby-transformer-rehype`,
-    options: {
-      plugins: [
-        {
-          resolve: `gatsby-rehype-ghost-links`,
-        },
-      ],
+        `gatsby-transformer-rehype`,
+        `gatsby-rehype-ghost-links`,
     },
         
     ],
