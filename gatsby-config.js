@@ -189,3 +189,17 @@ module.exports = {
         `gatsby-plugin-offline`,
     ],
 }
+
+// In your gatsby-config.js
+plugins: [
+  {
+    resolve: `gatsby-transformer-rehype`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-rehype-ghost-links`,
+        },
+      ],
+    },
+  },
+]
